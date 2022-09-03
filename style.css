@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    background-image: url(chrome-os-61-lock.webp);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+.lgn{
+    margin-top: 260px;
+    display: flex;
+    width: 100%;
+}
+
+.pfp{
+    width: 100px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.info{
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+input[type=password]{
+    margin: 0 auto;
+    height: 30px;
+    background-color: rgba(121, 119, 119, 0.5);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding-left: 10px;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.name{
+    font-size: 25px;
+    color:white;
+    font-family: sans-serif;
+}
+
+::placeholder{
+    color: rgb(216, 214, 214);
+    letter-spacing: 0px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  }
+
+
+  
+input[type=submit]{
+    color: transparent;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: rgba(121, 119, 119, 0.5);
+    outline: none;
+    border: none;
+    background-image: url(grayarrow.png);
+    background-position: -8px -1px;
+    background-size: 43px;
+    margin-left: 8px;
+}
+
+input:not(:placeholder-shown) +
+input[type=submit]{
+    background-color: rgba(133, 131, 131, 0.5);
+    background-image: url(arrow.png);
+    color: transparent;
+    cursor: pointer;
+}
+
+.footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    padding-left:8px;
+    padding-bottom: 4px;
+}
+
+.btn{
+    background-color: rgba(133, 131, 131, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.powr{
+    background-color: rgba(133, 131, 131, 0.5);
+    padding: 9px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    float: right;
+    margin-right: 15px;
+}
+
+.png{
+    margin-bottom: -5px;
+}
+
+#clock{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
