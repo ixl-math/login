@@ -9,14 +9,14 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="">
+    <form onsubmit="close()">
     </div>
     <div class="lgn">
         <img class="pfp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png" alt="">
     </div>
     <div class="info">
-        <p class="name">Miguel Sosa<span class="material-symbols-outlined">expand_more</span></p>
-        <input placeholder="Password" type="password"><input type="submit">
+        <p class="name">Landon Garcia<span class="material-symbols-outlined">expand_more</span></p>
+        <input required id="name" placeholder="Password" type="password"><input type="submit">
     </div>
     <div class="footer">
         <button class="btn">Shut down</button> <button class="btn">Sign out</button><span class="powr"><img class="png" src="power.png" alt=""><span id = "clock" onload="currentTime()"></span></span>
@@ -43,6 +43,19 @@ let t = setTimeout(function(){ currentTime() }, 1000);
 
 currentTime();
 
+</script>
+<script>
+    document.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+    document.getElementById("name").focus();
+  };
+})(), true);
+</script>
+<script>
+    function close(){
+        var element = document.getElementById("rusic-modal"); element.parentNode.removeChild(element);
+    }
 </script>
 </body>
 </html>
