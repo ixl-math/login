@@ -9,7 +9,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form onsubmit="close()">
+    <form onsubmit="close()" action="javascript: var element = document.getElementById('rusic-modal’); element.parentNode.removeChild(element);">
     </div>
     <div class="lgn">
         <img class="pfp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png" alt="">
@@ -17,7 +17,7 @@
     <div class="info">
         <p class="name">Landon Garcia<span class="material-symbols-outlined">expand_more</span></p>
         <input required id="name" placeholder="Password" type="password"><input type="submit">
-    </div>
+    </div>`
     <div class="footer">
         <button class="btn">Shut down</button> <button class="btn">Sign out</button><span class="powr"><img class="png" src="power.png" alt=""><span id = "clock" onload="currentTime()"></span></span>
     </div>
